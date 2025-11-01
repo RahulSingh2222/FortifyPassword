@@ -9,11 +9,6 @@ A simple and secure web-based **Password Strength Checker & Deterministic Obfusc
 
 ---
 
-## 🖼️ Preview
-![FortifyPassword Screenshot](./preview.png)
-
----
-
 ## 🚀 Features
 
 - **Password Strength Analyzer:**  
@@ -21,6 +16,12 @@ A simple and secure web-based **Password Strength Checker & Deterministic Obfusc
 
 - **🔸 Obfuscation Mode:**  
   Applies a **deterministic transformation** to your password to make it harder to guess but still reproducible from the same input.
+
+  **💡 Example**
+
+  | Input Password | Hashed Output | Obfuscated Output |
+  |----------------|---------------|-------------------|
+  | `Cyber@123`    | `ae12f3b8d7e93e9a0a1b` | `C@yb!e3r12` |
 
 - **📋 Copy to Clipboard:**  
   Quickly copy your new password with a single click.
