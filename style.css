@@ -1,0 +1,224 @@
+/* === General Layout === */
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  width: 90%;
+  max-width: 600px;
+}
+
+/* === Headings & Text === */
+.container h1 {
+  color: #00ffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: #cccccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* === Links (Icons) === */
+.links i {
+  color: #00ffff;
+  transition: 0.3s ease;
+}
+
+.links i:hover {
+  color: #00cccc;
+  transform: scale(1.1);
+}
+
+/* === Buttons === */
+button {
+  background-color: #00ffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+/* === Box Section === */
+.box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.box h2 {
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+
+.box p {
+  color: #cccccc;
+}
+
+/* === Input & Show Button === */
+#passwordInput {
+  width: 70%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #00ffff;
+  background: #1a1a1a;
+  color: white;
+  font-size: 15px;
+}
+
+#showBtn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #00ffff;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+#showBtn:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+/* === Character Count under Show Button === */
+#length {
+  color: #00ffff;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* === Output Section (Encrypted Password + Copy inline) === */
+.output {
+  display: none; /* Hidden until Generate is clicked */
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 15px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.output p {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+  flex: 1;
+  text-align: left;
+}
+
+#encryptedPassword {
+  color: #00ffff;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+#copyBtn {
+  padding: 8px 15px;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+#copyBtn:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+/* === Note Section === */
+.note {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid #00ffff;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+/* === Input Row: Align input, Show button, and counter === */
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Keeps perfect vertical alignment */
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Input occupies most width */
+.input-row input#passwordInput {
+  flex: 0 0 70%;
+  min-width: 160px;
+}
+
+/* Right side column for Show button + counter */
+.input-row .side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 90px;
+}
+
+#errorMessage {
+    color: #ff6b6b;
+    font-size: 14px;
+    text-align: left;
+    margin: 5px 0 10px 5px;
+    display: none; /* hide by default */
+}
+
+#errorMessage i {
+    color: orange;
+    margin-right: 5px;
+}
+#pwError {
+  color: #ff6b6b;
+  font-size: 14px;
+  text-align: left;
+  margin: 5px 0 10px 5px;
+  display: none; /* hidden by default */
+}
+
+#pwError i {
+  color: orange;
+  margin-right: 5px;
+}
+

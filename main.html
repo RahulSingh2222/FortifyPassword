@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Let's Make Password More Strong !!!</h1>
+        <p>Developed by Rahul Singh</p>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+            </a>
+            &nbsp;&nbsp;
+            <a href="https://github.com/RahulSingh2222" target="_blank">
+                <i class="fa-brands fa-github" style="font-size: 30px;"></i>
+            </a>
+        </div>
+
+        <div class="box">
+            <h2>Generate Secure Password</h2>
+            <div class="info">
+                <p>🔑Please provide a unique password combined with a symbol, number and alphabeat to create a secure
+                    password</p>
+            </div>
+
+            <div class="input-row">
+                <input id="passwordInput" type="password" placeholder="Enter your password" maxlength="25" />
+                <div class="side">
+                    <button id="showBtn" type="button">Show</button>
+                    <p id="length">(0/25)</p>
+                </div>
+            </div>
+
+            <p id="errorMessage"><i>⚠</i> Password must be more than 8 characters.</p>
+
+            <button id="generateBtn" type="button">Generate</button>
+
+            <div class="output">
+                <p>Encrypted Password: <span id="encryptedPassword">______________</span></p>
+                <button id="copyBtn">Copy</button>
+            </div>
+
+            <div class="note">
+                <p>🔒 You need not remember the encrypted password; remember the original, and we will provide the
+                    encrypted format.</p>
+            </div>
+
+        </div>
+        <p>⚠️ Your data is not stored. Privacy Respected.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
